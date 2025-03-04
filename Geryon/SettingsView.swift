@@ -35,7 +35,7 @@ struct SettingsView: View {
             .padding()
 
             Button("Save & Start Monitoring") {
-                print("🟢 Button pressed! Attempting to start monitoring...")
+                print("Button pressed! Attempting to start monitoring...")
                 FileMonitor.shared.startMonitoring()
             }
             .padding()
@@ -55,7 +55,7 @@ struct SettingsView: View {
                 print("📂 Selected source directory: \(sourceDirectory)")
                 fflush(stdout)
 
-                // ✅ Automatically set a default master file name
+                // Automatically set a default master file name
                 let monitoredDirectoryName = (sourceDirectory as NSString).lastPathComponent
                 let downloadsPath = FileManager.default.urls(for: .downloadsDirectory, in: .userDomainMask).first!.path
                 destinationFile = (downloadsPath as NSString).appendingPathComponent("Combined_\(monitoredDirectoryName).swift")
@@ -69,7 +69,7 @@ struct SettingsView: View {
     
 
     func selectDestinationFile() {
-        Task { @MainActor in // ✅ Ensures it runs on the main thread
+        Task { @MainActor in // Ensures it runs on the main thread
             let panel = NSSavePanel()
             panel.title = "Select Master Swift File"
             panel.canCreateDirectories = true
@@ -84,7 +84,7 @@ struct SettingsView: View {
 
             let response = panel.runModal()
             if response == .OK, let url = panel.url {
-                destinationFile = url.path // ✅ Store selected file path
+                destinationFile = url.path // Store selected file path
                 print("Selected destination file: \(destinationFile)")
             } else {
                 print("No file selected or user canceled.")
