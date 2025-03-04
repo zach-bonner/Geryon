@@ -1,6 +1,6 @@
 //
 //  ContentView.swift
-//  SwiftCodeMerger
+//  Geryon
 //
 //  Created by Zachary Bonner on 3/2/25.
 //
