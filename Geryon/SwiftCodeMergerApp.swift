@@ -1,5 +1,5 @@
 //
-//  SwiftCodeMergerApp.swift
+//  GeryonApp.swift
 //  Geryon
 //
 //  Created by Zachary Bonner on 3/2/25.
@@ -9,7 +9,7 @@ import SwiftUI
 import AppKit
 
 @main
-struct SwiftCodeMergerApp: App {
+struct GeryonApp: App {
     @NSApplicationDelegateAdaptor(AppDelegate.self) var appDelegate
 
     var body: some Scene {
