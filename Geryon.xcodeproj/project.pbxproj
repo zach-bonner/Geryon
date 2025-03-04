@@ -11,9 +11,9 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		367C280C2D753CFB000B18DA /* SwiftCodeMerger */ = {
+		367C280C2D753CFB000B18DA /* Geryon */ = {
 			isa = PBXFileSystemSynchronizedRootGroup;
-			path = SwiftCodeMerger;
+			path = Geryon;
 			sourceTree = "<group>";
 		};
 /* End PBXFileSystemSynchronizedRootGroup section */
@@ -32,7 +32,7 @@
 		367C28012D753CFB000B18DA = {
 			isa = PBXGroup;
 			children = (
-				367C280C2D753CFB000B18DA /* SwiftCodeMerger */,
+				367C280C2D753CFB000B18DA /* Geryon */,
 				367C280B2D753CFB000B18DA /* Products */,
 			);
 			sourceTree = "<group>";
@@ -61,7 +61,7 @@
 			dependencies = (
 			);
 			fileSystemSynchronizedGroups = (
-				367C280C2D753CFB000B18DA /* SwiftCodeMerger */,
+				367C280C2D753CFB000B18DA /* Geryon */,
 			);
 			name = SwiftCodeMerger;
 			packageProductDependencies = (
